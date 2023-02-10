@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import {Inter} from '@next/font/google'
 import styles from './page.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({subsets: ['latin']})
 
 export default function Home() {
   return (
@@ -32,6 +32,9 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
+        <h1 className="text-3xl font-bold underline red">
+          Hello, Agus! Tailwind is working
+        </h1>
         <Image
           className={styles.logo}
           src="/next.svg"
