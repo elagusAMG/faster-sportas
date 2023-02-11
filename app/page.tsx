@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import {Inter} from '@next/font/google'
-import styles from './page.module.css'
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "./page.module.css";
 
-const inter = Inter({subsets: ['latin']})
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -32,9 +32,12 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <h1 className="text-3xl font-bold underline red">
+        <h1 className="red text-3xl font-bold underline">
           Hello, Agus! Tailwind is working
         </h1>
+        <button className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">
+          Testing prettier plugin for tailwind
+        </button>
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -90,5 +93,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
